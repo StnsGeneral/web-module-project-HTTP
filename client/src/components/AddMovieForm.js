@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import axios from 'axios';
 
 const AddMovieForm = (props) => {
@@ -92,6 +92,9 @@ const AddMovieForm = (props) => {
           </div>
           <div className="modal-footer">
             <input type="submit" className="btn btn-info" value="Save" />
+            <Link to={`/movies`}>
+              <input type="button" className="btn btn-default" value="Cancel" />
+            </Link>
           </div>
         </form>
       </div>

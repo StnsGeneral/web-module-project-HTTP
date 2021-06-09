@@ -33,7 +33,6 @@ const App = (props) => {
         setMovies(movies.filter((movie) => movie.id != id));
       })
       .catch((err) => console.error(err));
-    // setMovies(newMovies);
   };
 
   const addToFavorites = (movie) => {};
